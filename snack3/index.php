@@ -39,11 +39,30 @@ $posts = [
 ];
 ?>
 
-<?php var_dump($posts['12/01/21']);  ?>
-  <?php for ($i=1; $i <= count($posts) ; $i++) {
-    // code...
-    // echo $posts[i];
-    // echo $posts[i]['title'];
-    // echo $posts[i]['author'];
-    // echo $posts[i]['text'];
-  } ?>
+<?= '12/01/2021' . '<br>';  ?>
+<?php for($i=0; $i < count($posts['12/01/2021']); $i++) {
+  // code...
+  echo $posts['12/01/2021'][$i]['title'] . '<br>';
+  echo $posts['12/01/2021'][$i]['author'] . '<br>';
+  echo $posts['12/01/2021'][$i]['text'] . '<br>';
+  echo "<br>";
+}
+?>
+<?= '10/05/2021' . '<br>';  ?>
+<?php for($i=0; $i < count($posts['10/05/2021']); $i++) {
+  // code...
+  echo $posts['10/05/2021'][$i]['title'] . '<br>';
+  echo $posts['10/05/2021'][$i]['author'] . '<br>';
+  echo $posts['10/05/2021'][$i]['text'] . '<br>';
+  echo "<br>";
+}
+?>
+<?= '12/05/2021' . '<br>';  ?>
+<?php for($i=0; $i < count($posts['12/05/2021']); $i++) {
+  // code...
+  echo $posts['12/05/2021'][$i]['title'] . '<br>';
+  echo $posts['12/05/2021'][$i]['author'] . '<br>';
+  echo $posts['12/05/2021'][$i]['text'] . '<br>';
+  echo "<br>";
+}
+?>
